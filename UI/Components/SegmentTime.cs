@@ -37,6 +37,7 @@ namespace LiveSplit.UI.Components
             {
                 CurrentState = state
             };
+
         }
 
         private void PrepareDraw(LiveSplitState state)
@@ -133,7 +134,7 @@ namespace LiveSplit.UI.Components
 
         public void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, LayoutMode mode)
         {
-            var componentName = state.CurrentSplit.Name;
+            var componentName = state.CurrentSplit?.Name;
             InternalComponent.LongestString = componentName;
             InternalComponent.NameLabel.Text = componentName;
             InternalComponent.TimeValue = SegmentTimer.GetTime(state, state.CurrentTimingMethod);
