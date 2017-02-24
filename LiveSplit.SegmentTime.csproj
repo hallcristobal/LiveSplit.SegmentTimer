@@ -32,13 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LiveSplit.Core">
-      <HintPath>References\LiveSplit.Core.dll</HintPath>
+      <HintPath>Ref\LiveSplit.Core.dll</HintPath>
     </Reference>
     <Reference Include="LiveSplit.DetailedTimer">
-      <HintPath>References\LiveSplit.DetailedTimer.dll</HintPath>
+      <HintPath>Ref\LiveSplit.DetailedTimer.dll</HintPath>
     </Reference>
     <Reference Include="LiveSplit.Timer">
-      <HintPath>References\LiveSplit.Timer.dll</HintPath>
+      <HintPath>Ref\LiveSplit.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,10 +51,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UpdateManager">
-      <HintPath>References\UpdateManager.dll</HintPath>
+      <HintPath>Ref\UpdateManager.dll</HintPath>
     </Reference>
     <Reference Include="WinFormsColor">
-      <HintPath>References\WinFormsColor.dll</HintPath>
+      <HintPath>Ref\WinFormsColor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

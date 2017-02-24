@@ -135,9 +135,13 @@ namespace LiveSplit.UI.Components
         public void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, LayoutMode mode)
         {
             var componentName = state.CurrentSplit?.Name;
+            
+            var timelbl = Formatter.Format(SegmentTimer.GetTime(state, state.CurrentTimingMethod)) + "/" + 
+                Formatter.Format(state.CurrentSplit?.BestSegmentTime[state.CurrentTimingMethod]);
+
             InternalComponent.LongestString = componentName;
             InternalComponent.NameLabel.Text = componentName;
-            InternalComponent.TimeValue = SegmentTimer.GetTime(state, state.CurrentTimingMethod);
+            InternalComponent.ValueLabel.Text = timelbl;
 
             Cache.Restart();
             Cache["NameValue"] = InternalComponent.NameLabel.Text;
